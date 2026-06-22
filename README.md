@@ -102,6 +102,29 @@ npm start
 
 The application will be available on `http://localhost:3000`
 
+### GitHub Pages Deployment
+
+This application is automatically deployed to GitHub Pages via GitHub Actions CI/CD pipeline.
+
+**Features:**
+- ✅ Automatic builds on every push to `main`
+- ✅ Dynamic URL resolution (localhost vs GitHub Pages)
+- ✅ No hardcoded URLs - environment-aware
+- ✅ Single Page App (SPA) routing support
+
+**To deploy:**
+1. Push code to GitHub
+2. Go to Settings → Pages
+3. Set source to "Deploy from a branch" → `main` → `/root`
+4. GitHub Actions will automatically build and deploy
+
+**Access your app:**
+```
+https://your-username.github.io/mfe/
+```
+
+For detailed deployment instructions, see [GITHUB_PAGES_DEPLOYMENT.md](./GITHUB_PAGES_DEPLOYMENT.md)
+
 ## 🏗️ Module Federation Configuration
 
 Each MFE is configured with Module Federation to expose its components:

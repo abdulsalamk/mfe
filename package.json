@@ -10,11 +10,12 @@
     "dev:left": "webpack serve --config webpack.left.js --mode development",
     "dev:middle": "webpack serve --config webpack.middle.js --mode development",
     "dev:right": "webpack serve --config webpack.right.js --mode development",
-    "build": "npm run build:host && npm run build:left && npm run build:middle && npm run build:right",
+    "build": "npm run build:host && npm run build:left && npm run build:middle && npm run build:right && npm run setup:github-pages",
     "build:host": "webpack --config webpack.host.js --mode production",
     "build:left": "webpack --config webpack.left.js --mode production",
     "build:middle": "webpack --config webpack.middle.js --mode production",
-    "build:right": "webpack --config webpack.right.js --mode production"
+    "build:right": "webpack --config webpack.right.js --mode production",
+    "setup:github-pages": "node scripts/setup-github-pages.js"
   },
   "keywords": [
     "micro-frontend",

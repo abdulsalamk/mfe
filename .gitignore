@@ -98,6 +98,30 @@ dist
 # Sveltekit cache directory
 .svelte-kit/
 
+# Webpack/Module Federation builds
+dist/
+build/
+*.wasm
+
+# Webpack dev server
+.webpack/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
 # vitepress build output
 **/.vitepress/dist
 
